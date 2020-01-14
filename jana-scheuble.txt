@@ -150,7 +150,16 @@ Stretch Questions
     If an element's position is absolute, that means it is fixed. Placement can be offset using top, right, bottom and left properties.
 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    
+    set to display: inline-block;
+    can control width and height without having it's own line
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    display block: <div></div> <h1></h1> <section></section>
+
+    display inline: <a></a> <span></span>
+
+    display inline-block: <button></button>
 
     5. In your own words, explain the box model. What is the fix for the box model? 
+    Every element in HTML is contained in a box. Each box has four parts, margin, border, padding and content. The content is the visible part of the element, our text, image, etc. The padding surrounds the content. It is the space between the border and the content. If we expand the padding in CSS, it will make our entire box bigger and will take up more space on the page. To avoid this, we can simply use box-sizing: border-box; and that will tell our box that we do not want it to exceed the width of the content. The border separates the padding from the margin. The border can be styled in CSS. The margin is the space between the border and the other elements on the page. If we want elements to be further apart, we can increase the margins to create a bigger space between them.
+    The fix is using the box-sizing: border-box; property and value to prevent the padding from making the content take up more space than it needs.
